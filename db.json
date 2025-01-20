@@ -1,0 +1,155 @@
+{
+    "admins": [
+        {
+            "id": "1",
+            "name": "Admin User",
+            "email": "admin@gmail.com",
+            "password": "Admin12345",
+            "role": "admin"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "John Smith",
+            "email": "john.smith@email.com",
+            "password": "jsmith2024",
+            "role": "user",
+            "cart": []
+        },
+        {
+            "id": "2",
+            "name": "Sarah Johnson",
+            "email": "sarah.j@email.com",
+            "password": "sarahj2024",
+            "role": "user",
+            "cart": []
+        },
+        {
+            "id": "3",
+            "name": "Michael Chen",
+            "email": "m.chen@email.com",
+            "password": "mchen2024",
+            "role": "user",
+            "cart": []
+        },
+        {
+            "id": "4",
+            "name": "Emma Williams",
+            "email": "emma.w@email.com",
+            "password": "ewill2024",
+            "role": "user",
+            "cart": []
+        },
+        {
+            "id": "5",
+            "name": "David Brown",
+            "email": "david.b@email.com",
+            "password": "dbrown2024",
+            "role": "user",
+            "cart": []
+        }
+    ],
+    "products": [
+        {
+            "id": "prod_001",
+            "name": "Ultra HD Smart TV",
+            "description": "55-inch 4K Smart LED TV with HDR and built-in streaming apps",
+            "price": 699.99,
+            "category": "Electronics",
+            "stock": 15,
+            "imageUrl": "/assets/tv.jpg",
+            "ratings": 4.5
+        },
+        {
+            "id": "prod_002",
+            "name": "Wireless Noise-Canceling Headphones",
+            "description": "Premium bluetooth headphones with active noise cancellation",
+            "price": 249.99,
+            "category": "Electronics",
+            "stock": 25,
+            "imageUrl": "/assets/headphones.jpg",
+            "ratings": 4.8
+        },
+        {
+            "id": "prod_003",
+            "name": "Professional Chef Knife Set",
+            "description": "8-piece stainless steel kitchen knife set with wooden block",
+            "price": 129.99,
+            "category": "Kitchen",
+            "stock": 30,
+            "imageUrl": "/assets/knives.jpg",
+            "ratings": 4.7
+        },
+        {
+            "id": "prod_004",
+            "name": "Ergonomic Office Chair",
+            "description": "Adjustable office chair with lumbar support and mesh back",
+            "price": 199.99,
+            "category": "Furniture",
+            "stock": 20,
+            "imageUrl": "/assets/chair.jpg",
+            "ratings": 4.3
+        },
+        {
+            "id": "prod_005",
+            "name": "Smart Fitness Watch",
+            "description": "Waterproof fitness tracker with heart rate monitor and GPS",
+            "price": 179.99,
+            "category": "Electronics",
+            "stock": 40,
+            "imageUrl": "/assets/watch.jpg",
+            "ratings": 4.6
+        },
+        {
+            "id": "prod_006",
+            "name": "Robot Vacuum Cleaner",
+            "description": "Smart robot vacuum with app control and automatic charging",
+            "price": 299.99,
+            "category": "Appliances",
+            "stock": 18,
+            "imageUrl": "/assets/vacuum.jpg",
+            "ratings": 4.4
+        },
+        {
+            "id": "prod_007",
+            "name": "Premium Coffee Maker",
+            "description": "12-cup programmable coffee maker with built-in grinder",
+            "price": 149.99,
+            "category": "Kitchen",
+            "stock": 22,
+            "imageUrl": "/assets/coffee.jpg",
+            "ratings": 4.7
+        },
+        {
+            "id": "prod_008",
+            "name": "Portable Bluetooth Speaker",
+            "description": "Waterproof portable speaker with 20-hour battery life",
+            "price": 89.99,
+            "category": "Electronics",
+            "stock": 35,
+            "imageUrl": "/assets/speaker.jpg",
+            "ratings": 4.5
+        },
+        {
+            "id": "prod_009",
+            "name": "Air Fryer XL",
+            "description": "6-quart digital air fryer with 8 preset cooking functions",
+            "price": 119.99,
+            "category": "Kitchen",
+            "stock": 28,
+            "imageUrl": "/assets/airfryer.jpg",
+            "ratings": 4.8
+        },
+        {
+            "id": "prod_010",
+            "name": "Gaming Console Pro",
+            "description": "Next-gen gaming console with 1TB storage and wireless controller",
+            "price": 499.99,
+            "category": "Electronics",
+            "stock": 12,
+            "imageUrl": "/assets/console.jpg",
+            "ratings": 4.9
+        }
+    ]
+}
