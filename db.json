@@ -48,6 +48,30 @@
             "password": "dbrown2024",
             "role": "user",
             "cart": []
+        },
+        {
+            "id": "6",
+            "name": "Wan",
+            "email": "wan@gmail.com",
+            "password": "wan12345",
+            "role": "user",
+            "cart": []
+        },
+        {
+            "id": "5659",
+            "name": "user",
+            "email": "user@gmail.com",
+            "password": "123456",
+            "role": "user",
+            "cart": []
+        },
+        {
+            "id": "33cc",
+            "name": "user2",
+            "email": "user2@gmail.com",
+            "password": "123456",
+            "role": "user",
+            "cart": []
         }
     ],
     "products": [

@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O-BAY</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/assets/icon.png">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/icon.png" />
 </head>
 
 <body>
@@ -14,11 +14,12 @@
         <h1>WELCOME TO O-BAY</h1>
         <h2>Your favourite and affordable online shopping partner.</h2>
         <div class="btn">
-            <button class="rg-btn" onclick="">REGISTER</button>
-            <button class="lg-btn" onclick="">LOGIN</button>
+            <button class="rg-btn">REGISTER</button>
+            <button class="lg-btn">LOGIN</button>
         </div>
     </div>
 
+    <!-- Login Popup -->
     <div class="popup" id="popup">
         <div class="popup-content">
             <span class="close" id="closePopup">&times;</span>
@@ -35,6 +36,7 @@
         </div>
     </div>
 
+    <!-- Admin Login Popup -->
     <div class="popup" id="adminPopup">
         <div class="popup-content">
             <span class="close" id="closeAdminPopup">&times;</span>
@@ -47,20 +49,24 @@
         </div>
     </div>
 
+    <!-- Registration Popup -->
     <div class="popup" id="regPopup">
         <div class="popup-content">
             <span class="close" id="closeRegPopup">&times;</span>
-            <h2>Input details to create account.</h2>
+            <h2>Input details to create an account.</h2>
             <form id="registerForm">
-                <input type="text" placeholder="Name" >
-                <input type="email" placeholder="Email" >
-                <input type="password" placeholder="Password" >
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
                 <button type="submit" class="register">Register</button>
             </form>
         </div>
     </div>
 
-    <script defer src="script.js"></script>
+    <!-- Toast Messages -->
+    <div id="toast-container"></div>
+
+    <script defer src="index.js"></script>
 </body>
 
 </html>

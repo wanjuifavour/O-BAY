@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O-BAY</title>
+    <title>Products - O-BAY</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="/assets/icon.png">
 </head>
+
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="nav-icon-container"><a href="index.html"><img src="/assets/logout.png" alt="Logout" class="nav-icon"></a></li>
+            <li id="addProductNav" class="hidden">
+                <button id="addProductBtn" class="btn">Add Product</button>
+            </li>
+            <li class="nav-icon-container">
+                <a href="index.html">
+                    <img src="/assets/logout.png" alt="Logout" class="nav-icon">
+                </a>
+            </li>
         </ul>
     </nav>
-    <div class="products-page">
-        
+
+    <div class="products-page"></div>
+
+    <div class="popup" id="productDetailsPopup">
+        <div class="popup-content">
+            <span class="close" id="closeProductDetails">&times;</span>
+            <h2 id="productNamePopup">Product Name</h2>
+            <img id="productImagePopup" src="" alt="Product Image">
+            <p id="productDescriptionPopup"></p>
+            <p><strong>Price:</strong> $<span id="productPricePopup"></span></p>
+            <p><strong>Stock:</strong> <span id="productStockPopup"></span></p>
+            <p><strong>Category:</strong> <span id="productCategoryPopup"></span></p>
+            <div id="adminControls" class="hidden">
+                <button id="updateProductBtn" class="btn">Update Product</button>
+                <button id="deleteProductBtn" class="btn danger">Delete Product</button>
+            </div>
+        </div>
     </div>
-    <script defer src="script.js"></script>
+
+    <div class="popup" id="productFormPopup">
+        <div class="popup-content">
+            <span class="close" id="closeProductForm">&times;</span>
+            <h2 id="formTitle">Add Product</h2>
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <textarea id="productDescription" placeholder="Product Description" required></textarea>
+                <input type="number" id="productPrice" placeholder="Price" required>
+                <input type="number" id="productStock" placeholder="Stock" required>
+                <input type="text" id="productCategory" placeholder="Category" required>
+                <input type="text" id="productImageUrl" placeholder="Image URL" required>
+                <button type="submit">Save Product</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+
+    <script src="products.js"></script>
 </body>
+
 </html>
